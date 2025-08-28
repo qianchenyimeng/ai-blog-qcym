@@ -7,18 +7,20 @@
 [INFO]
 [INFO] --- resources:3.3.1:resources (default-resources) @ blog ---
 [INFO] Copying 1 resource from src/main/resources to target/classes
-[INFO] Copying 6 resources from src/main/resources to target/classes
+[INFO] Copying 7 resources from src/main/resources to target/classes
 [INFO]
 [INFO] --- compiler:3.14.0:compile (default-compile) @ blog ---
 [INFO] Recompiling the module because of changed source code.
-[INFO] Compiling 28 source files with javac [debug parameters release 17] to target/classes
+[INFO] Compiling 29 source files with javac [debug parameters release 17] to target/classes
+[INFO] /app/src/main/java/com/example/blog/config/SecurityConfig.java: /app/src/main/java/com/example/blog/config/SecurityConfig.java uses or overrides a deprecated API.
+[INFO] /app/src/main/java/com/example/blog/config/SecurityConfig.java: Recompile with -Xlint:deprecation for details.
 [INFO]
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ blog ---
 [INFO] skip non existing resourceDirectory /app/src/test/resources
 [INFO]
 [INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ blog ---
 [INFO] Recompiling the module because of changed dependency.
-[INFO] Compiling 8 source files with javac [debug parameters release 17] to target/test-classes
+[INFO] Compiling 9 source files with javac [debug parameters release 17] to target/test-classes
 [WARNING] /app/src/test/java/com/example/blog/controller/PostControllerTest.java:[25,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
 [WARNING] /app/src/test/java/com/example/blog/controller/PostControllerTest.java:[28,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
 [INFO]
@@ -29,9 +31,9 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.example.blog.controller.AuthControllerTest
-09:12:12.660 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.blog.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-09:12:12.862 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.blog.BlogApplication for test class com.example.blog.controller.AuthControllerTest
-09:12:13.157 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+10:01:28.315 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.blog.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:01:28.487 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.blog.BlogApplication for test class com.example.blog.controller.AuthControllerTest
+10:01:28.686 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -42,18 +44,18 @@
 
  :: Spring Boot ::                (v3.5.5)
 
-2025-08-28T09:12:13.673Z  INFO 17528 --- [blog] [           main] c.e.blog.controller.AuthControllerTest   : Starting AuthControllerTest using Java 21.0.8 with PID 17528 (started by jules in /app)
-2025-08-28T09:12:13.675Z  INFO 17528 --- [blog] [           main] c.e.blog.controller.AuthControllerTest   : No active profile set, falling back to 1 default profile: "default"
-2025-08-28T09:12:14.740Z  INFO 17528 --- [blog] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-28T09:12:14.833Z  INFO 17528 --- [blog] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 6 JPA repository interfaces.
-2025-08-28T09:12:15.290Z  INFO 17528 --- [blog] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-28T09:12:15.529Z  INFO 17528 --- [blog] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:7cef8a8e-577f-47cb-b025-10cf4ae7919b user=SA
-2025-08-28T09:12:15.533Z  INFO 17528 --- [blog] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-28T09:12:15.597Z  INFO 17528 --- [blog] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-28T09:12:15.655Z  INFO 17528 --- [blog] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-28T09:12:15.692Z  INFO 17528 --- [blog] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-28T09:12:15.994Z  INFO 17528 --- [blog] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-28T09:12:16.090Z  INFO 17528 --- [blog] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-08-28T10:01:29.061Z  INFO 22626 --- [blog] [           main] c.e.blog.controller.AuthControllerTest   : Starting AuthControllerTest using Java 21.0.8 with PID 22626 (started by jules in /app)
+2025-08-28T10:01:29.063Z  INFO 22626 --- [blog] [           main] c.e.blog.controller.AuthControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T10:01:30.003Z  INFO 22626 --- [blog] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T10:01:30.127Z  INFO 22626 --- [blog] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 6 JPA repository interfaces.
+2025-08-28T10:01:30.707Z  INFO 22626 --- [blog] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T10:01:30.961Z  INFO 22626 --- [blog] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:7a579f4e-7204-4101-b133-6817fc468719 user=SA
+2025-08-28T10:01:30.965Z  INFO 22626 --- [blog] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T10:01:31.026Z  INFO 22626 --- [blog] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T10:01:31.076Z  INFO 22626 --- [blog] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-28T10:01:31.109Z  INFO 22626 --- [blog] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T10:01:31.397Z  INFO 22626 --- [blog] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T10:01:31.477Z  INFO 22626 --- [blog] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -61,25 +63,26 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-08-28T09:12:17.250Z  INFO 17528 --- [blog] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-28T09:12:17.332Z  INFO 17528 --- [blog] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-28T09:12:17.930Z  WARN 17528 --- [blog] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-28T09:12:18.186Z  INFO 17528 --- [blog] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
-2025-08-28T09:12:18.666Z  INFO 17528 --- [blog] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-08-28T09:12:18.667Z  INFO 17528 --- [blog] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-08-28T09:12:18.668Z  INFO 17528 --- [blog] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2025-08-28T09:12:18.694Z  INFO 17528 --- [blog] [           main] c.e.blog.controller.AuthControllerTest   : Started AuthControllerTest in 5.558 seconds (process running for 7.203)
+2025-08-28T10:01:32.611Z  INFO 22626 --- [blog] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T10:01:32.705Z  INFO 22626 --- [blog] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T10:01:33.184Z  WARN 22626 --- [blog] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T10:01:33.472Z  INFO 22626 --- [blog] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-28T10:01:33.472Z  WARN 22626 --- [blog] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-28T10:01:33.990Z  INFO 22626 --- [blog] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-28T10:01:33.990Z  INFO 22626 --- [blog] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-28T10:01:33.992Z  INFO 22626 --- [blog] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-08-28T10:01:34.040Z  INFO 22626 --- [blog] [           main] c.e.blog.controller.AuthControllerTest   : Started AuthControllerTest in 5.368 seconds (process running for 6.687)
 Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
 OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
 WARNING: A Java agent has been loaded dynamically (/home/jules/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.178 s -- in com.example.blog.controller.AuthControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.877 s -- in com.example.blog.controller.AuthControllerTest
 [INFO] Running com.example.blog.controller.PostControllerTest
-2025-08-28T09:12:19.663Z  INFO 17528 --- [blog] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.blog.controller.PostControllerTest]: PostControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-08-28T09:12:19.675Z  INFO 17528 --- [blog] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.blog.BlogApplication for test class com.example.blog.controller.PostControllerTest
-2025-08-28T09:12:19.678Z  INFO 17528 --- [blog] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-08-28T10:01:35.020Z  INFO 22626 --- [blog] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.blog.controller.PostControllerTest]: PostControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-28T10:01:35.036Z  INFO 22626 --- [blog] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.blog.BlogApplication for test class com.example.blog.controller.PostControllerTest
+2025-08-28T10:01:35.041Z  INFO 22626 --- [blog] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -90,30 +93,34 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 
  :: Spring Boot ::                (v3.5.5)
 
-2025-08-28T09:12:19.723Z  INFO 17528 --- [blog] [           main] c.e.blog.controller.PostControllerTest   : Starting PostControllerTest using Java 21.0.8 with PID 17528 (started by jules in /app)
-2025-08-28T09:12:19.724Z  INFO 17528 --- [blog] [           main] c.e.blog.controller.PostControllerTest   : No active profile set, falling back to 1 default profile: "default"
-2025-08-28T09:12:20.355Z  WARN 17528 --- [blog] [           main] .s.s.UserDetailsServiceAutoConfiguration :
+2025-08-28T10:01:35.078Z  INFO 22626 --- [blog] [           main] c.e.blog.controller.PostControllerTest   : Starting PostControllerTest using Java 21.0.8 with PID 22626 (started by jules in /app)
+2025-08-28T10:01:35.078Z  INFO 22626 --- [blog] [           main] c.e.blog.controller.PostControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T10:01:35.764Z  WARN 22626 --- [blog] [           main] .s.s.UserDetailsServiceAutoConfiguration :
 
-Using generated security password: e8976c80-0118-408a-a3b3-0dbb24a37bb6
+Using generated security password: 13582797-a419-4bdc-8cb7-a4e7d3586b7e
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-08-28T09:12:20.358Z  INFO 17528 --- [blog] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-28T09:12:20.391Z  INFO 17528 --- [blog] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-08-28T09:12:20.391Z  INFO 17528 --- [blog] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-08-28T09:12:20.392Z  INFO 17528 --- [blog] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2025-08-28T09:12:20.405Z  INFO 17528 --- [blog] [           main] c.e.blog.controller.PostControllerTest   : Started PostControllerTest in 0.727 seconds (process running for 8.914)
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.857 s -- in com.example.blog.controller.PostControllerTest
+2025-08-28T10:01:35.769Z  INFO 22626 --- [blog] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-28T10:01:35.806Z  INFO 22626 --- [blog] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-28T10:01:35.807Z  INFO 22626 --- [blog] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-28T10:01:35.808Z  INFO 22626 --- [blog] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-08-28T10:01:35.822Z  INFO 22626 --- [blog] [           main] c.e.blog.controller.PostControllerTest   : Started PostControllerTest in 0.782 seconds (process running for 8.47)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.941 s -- in com.example.blog.controller.PostControllerTest
+[INFO] Running com.example.blog.controller.AuthFlowTest
+2025-08-28T10:01:35.966Z  INFO 22626 --- [blog] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.blog.controller.AuthFlowTest]: AuthFlowTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-28T10:01:35.971Z  INFO 22626 --- [blog] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.blog.BlogApplication for test class com.example.blog.controller.AuthFlowTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.990 s -- in com.example.blog.controller.AuthFlowTest
 [INFO] Running com.example.blog.service.impl.UserServiceImplTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.373 s -- in com.example.blog.service.impl.UserServiceImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.398 s -- in com.example.blog.service.impl.UserServiceImplTest
 [INFO] Running com.example.blog.service.impl.CommentServiceImplTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s -- in com.example.blog.service.impl.CommentServiceImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 s -- in com.example.blog.service.impl.CommentServiceImplTest
 [INFO] Running com.example.blog.service.impl.PostServiceImplTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s -- in com.example.blog.service.impl.PostServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s -- in com.example.blog.service.impl.PostServiceImplTest
 [INFO] Running com.example.blog.BlogApplicationTests
-2025-08-28T09:12:21.130Z  INFO 17528 --- [blog] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.blog.BlogApplicationTests]: BlogApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-08-28T09:12:21.141Z  INFO 17528 --- [blog] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.blog.BlogApplication for test class com.example.blog.BlogApplicationTests
-2025-08-28T09:12:21.149Z  INFO 17528 --- [blog] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-08-28T10:01:37.605Z  INFO 22626 --- [blog] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.blog.BlogApplicationTests]: BlogApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-28T10:01:37.630Z  INFO 22626 --- [blog] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.blog.BlogApplication for test class com.example.blog.BlogApplicationTests
+2025-08-28T10:01:37.638Z  INFO 22626 --- [blog] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -124,17 +131,17 @@ This generated password is for development use only. Your security configuration
 
  :: Spring Boot ::                (v3.5.5)
 
-2025-08-28T09:12:21.190Z  INFO 17528 --- [blog] [           main] com.example.blog.BlogApplicationTests    : Starting BlogApplicationTests using Java 21.0.8 with PID 17528 (started by jules in /app)
-2025-08-28T09:12:21.191Z  INFO 17528 --- [blog] [           main] com.example.blog.BlogApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2025-08-28T09:12:21.524Z  INFO 17528 --- [blog] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-28T09:12:21.563Z  INFO 17528 --- [blog] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 6 JPA repository interfaces.
-2025-08-28T09:12:21.804Z  INFO 17528 --- [blog] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-08-28T09:12:21.813Z  INFO 17528 --- [blog] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:b2a17f3f-5140-4dbf-801a-9ecb341ddba5 user=SA
-2025-08-28T09:12:21.814Z  INFO 17528 --- [blog] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-08-28T09:12:21.816Z  INFO 17528 --- [blog] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-28T09:12:21.821Z  INFO 17528 --- [blog] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-28T09:12:21.844Z  INFO 17528 --- [blog] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-28T09:12:21.848Z  INFO 17528 --- [blog] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-08-28T10:01:37.672Z  INFO 22626 --- [blog] [           main] com.example.blog.BlogApplicationTests    : Starting BlogApplicationTests using Java 21.0.8 with PID 22626 (started by jules in /app)
+2025-08-28T10:01:37.673Z  INFO 22626 --- [blog] [           main] com.example.blog.BlogApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T10:01:37.903Z  INFO 22626 --- [blog] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T10:01:37.923Z  INFO 22626 --- [blog] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 6 JPA repository interfaces.
+2025-08-28T10:01:38.051Z  INFO 22626 --- [blog] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-28T10:01:38.055Z  INFO 22626 --- [blog] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:3a801b62-4820-4639-89e6-06cf8ae56b70 user=SA
+2025-08-28T10:01:38.055Z  INFO 22626 --- [blog] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-28T10:01:38.057Z  INFO 22626 --- [blog] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T10:01:38.060Z  INFO 22626 --- [blog] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T10:01:38.070Z  INFO 22626 --- [blog] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T10:01:38.072Z  INFO 22626 --- [blog] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -142,24 +149,25 @@ This generated password is for development use only. Your security configuration
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-08-28T09:12:21.983Z  INFO 17528 --- [blog] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-28T09:12:22.008Z  INFO 17528 --- [blog] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-28T09:12:22.099Z  WARN 17528 --- [blog] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-28T09:12:22.167Z  INFO 17528 --- [blog] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
-2025-08-28T09:12:22.292Z  INFO 17528 --- [blog] [           main] com.example.blog.BlogApplicationTests    : Started BlogApplicationTests in 1.143 seconds (process running for 10.801)
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.174 s -- in com.example.blog.BlogApplicationTests
+2025-08-28T10:01:38.171Z  INFO 22626 --- [blog] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T10:01:38.213Z  INFO 22626 --- [blog] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T10:01:38.315Z  WARN 22626 --- [blog] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T10:01:38.389Z  INFO 22626 --- [blog] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-28T10:01:38.390Z  WARN 22626 --- [blog] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-28T10:01:38.522Z  INFO 22626 --- [blog] [           main] com.example.blog.BlogApplicationTests    : Started BlogApplicationTests in 0.886 seconds (process running for 11.169)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.932 s -- in com.example.blog.BlogApplicationTests
 [INFO] Running com.example.blog.mapper.PostMapperTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in com.example.blog.mapper.PostMapperTest
 [INFO] Running com.example.blog.mapper.CommentMapperTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in com.example.blog.mapper.CommentMapperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in com.example.blog.mapper.CommentMapperTest
 [INFO]
 [INFO] Results:
 [INFO]
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
 [INFO]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  15.161 s
-[INFO] Finished at: 2025-08-28T09:12:22Z
+[INFO] Total time:  15.177 s
+[INFO] Finished at: 2025-08-28T10:01:38Z
 [INFO] ------------------------------------------------------------------------
